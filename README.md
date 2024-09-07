@@ -16,7 +16,7 @@ Este repositorio contiene los scripts y herramientas utilizados para generar y a
 - **`generator.py`**: Script que define la estructura del generador de la GAN
 - **`discriminator.py`**: Script que define la estructura del discriminador de la GAN
 - **`wgan_gp.py`**: Script que define funciones para convertir la GAN en WGAN-GP
-- **`ACI-IoT-2023-Payload.csv`**: Fichero con el dataset que entrena el modelo
+- **`ACI-IoT-2023-Payload.csv`**: Fichero con el dataset que entrena el modelo. NEEDS TO BE DOWNLOADED AND PLACED WITH THE REST OF FILES.
 - **`generated_samples.csv`**: Archivo de salida que almacena los paquetes generados por el modelo GAN.
 - **`generator_model.keras`**: Modelo pre-entrenado de la GAN lista para ser usada.
 - **`model_params.npy`**: Parámetros del modelo guardados para ser usados junto con el anterior fichero.
@@ -35,22 +35,23 @@ Este proyecto ha sido desarrollado como prueba de concepto (POC) para el Trabajo
     ```bash
    git clone https://github.com/tuusuario/turepositorio.git
 
-2. Descarga el dataset en:
+2. **Descarga el dataset**
+   Es importante descargar el dataset y posicionarlo en el mismo directorio que el resto de ficheros:
    -    https://www.kaggle.com/datasets/emilynack/aci-iot-network-traffic-dataset-2023?resource=download&select=ACI-IoT-2023-Payload.csv
-3. **Instala las dependencias:**
+4. **Instala las dependencias:**
 
     Ejecuta el siguiente comando para instalar todas las librerías necesarias desde el archivo requirements.txt:
 
    ```bash
         pip install -r requirements.txt
-4. **¿Quieres generar un nuevo modelo?**
+5. **¿Quieres generar un nuevo modelo?**
 
     Sí: Borra los archivos existentes del modelo entrenado antes de continuar.
       - model_params.npy
       - generator_model.keras
     No: Continua con el paso 4.
 
-5. Ejecuta el script principal main.py:
+6. Ejecuta el script principal main.py:
     ```bash
       python main.py
  - Si se genera un nuevo modelo, el script IoTGAN.py será llamado automáticamente y se entrenará un nuevo modelo GAN.
