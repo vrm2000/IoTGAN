@@ -28,6 +28,8 @@ Este proyecto ha sido desarrollado como prueba de concepto (POC) para el Trabajo
 
 # Manual de Instalación y Uso
 
+Este proyecto fue desarrollado usando Python v3.11.9
+
 ## Pasos para la instalación
 
 1. **Clona el repositorio:**
