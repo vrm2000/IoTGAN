@@ -38,24 +38,31 @@ Este proyecto fue desarrollado usando Python v3.11.9
    git clone https://github.com/tuusuario/turepositorio.git
 
 2. **Descarga el dataset**
+   
    Es importante descargar el dataset y posicionarlo en el mismo directorio que el resto de ficheros:
    -    https://www.kaggle.com/datasets/emilynack/aci-iot-network-traffic-dataset-2023?resource=download&select=ACI-IoT-2023-Payload.csv
+     
 4. **Instala las dependencias:**
 
     Ejecuta el siguiente comando para instalar todas las librerías necesarias desde el archivo requirements.txt:
 
    ```bash
         pip install -r requirements.txt
+   
 5. **¿Quieres generar un nuevo modelo?**
 
-    Sí: Borra los archivos existentes del modelo entrenado antes de continuar.
+    - Sí: Borra los archivos existentes del modelo entrenado antes de continuar.
       - model_params.npy
       - generator_model.keras
-    No: Continua con el paso 4.
+        
+    - No:
+        - Continua con el paso 5.
 
 6. Ejecuta el script principal main.py:
+   
     ```bash
-      python main.py
+          python main.py
+    
  - Si se genera un nuevo modelo, el script IoTGAN.py será llamado automáticamente y se entrenará un nuevo modelo GAN.
  - Si ya existe un modelo entrenado, este será cargado y utilizado.
    
