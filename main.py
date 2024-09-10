@@ -42,7 +42,7 @@ def check_and_train_model():
         print(Fore.RED + f"El modelo o los parámetros no existen. Entrenando un nuevo modelo..." + Style.RESET_ALL)
 
         # Ejecutar el script de entrenamiento utilizando el intérprete de Python del entorno virtual
-        result = subprocess.run([python_executable, 'IoTGAN.py'], capture_output=True, text=True)
+        result = subprocess.run([python_executable, 'IoTGAN.py'], capture_output=True, text=True, encoding='utf-8')
 
         # Mostrar la salida del script de entrenamiento (opcional)
         print(result.stdout)
